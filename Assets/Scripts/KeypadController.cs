@@ -35,4 +35,29 @@ public class KeypadController : MonoBehaviour
         // Yeni metni InputField'a atayýn
         inputField.text = currentText;
     }
+
+    // Sil tuþuna bastýðýnýzda çaðrýlacak fonksiyon
+    public void OnDeleteButtonClick()
+    {
+        // InputField'daki mevcut metni al
+        string currentText = inputField.text;
+
+        // Eðer metin uzunluðu en az 1 ise, son karakteri ve aradaki "-" iþaretini sil
+        if (currentText.Length >= 1)
+        {
+            // Eðer metin uzunluðu 1 ise, sadece son karakteri sil
+            if (currentText.Length == 1)
+            {
+                currentText = "";
+            }
+            // Eðer metin uzunluðu 4'ten küçükse, son karakteri ve aradaki "-" iþaretini sil
+            else if (currentText.Length < 4)
+            {
+                currentText = currentText.Substring(0, currentText.Length - 2);
+            }
+        }
+
+        // Yeni metni InputField'a atayýn
+        inputField.text = currentText;
+    }
 }
