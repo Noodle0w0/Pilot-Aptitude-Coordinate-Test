@@ -10,4 +10,11 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene("Level1");
     }
+
+    public void QuitGame()
+    {
+        // Çýkýþ butonuna baðlý iþlev
+        // Oyunu kapatýr
+        Application.Quit();
+    }
 }
