@@ -60,4 +60,9 @@ public class KeypadController : MonoBehaviour
         // Yeni metni InputField'a atayýn
         inputField.text = currentText;
     }
+
+    public void EnterButton()
+    {
+        Debug.Log("Basýldý");
+    }
 }
