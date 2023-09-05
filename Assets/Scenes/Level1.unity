@@ -7980,7 +7980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &635222597
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8000,8 +8000,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.6900024, y: 512.29407}
-  m_SizeDelta: {x: -155.5264, y: -1085.3748}
+  m_AnchoredPosition: {x: -6.3499146, y: 496.19318}
+  m_SizeDelta: {x: -677.1546, y: -1532.0728}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &635222598
 MonoBehaviour:
@@ -15094,7 +15094,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 11
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -15118,7 +15118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239318962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 4, y: -2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25998,7 +25998,7 @@ RectTransform:
   m_GameObject: {fileID: 2030351377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 825262733}
@@ -26023,6 +26023,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridPrefab: {fileID: 2902852749430722929, guid: 437bcd5472ccf3841bb41da8ae2bd847, type: 3}
   number: 9
+  font: {fileID: 0}
+  inputField: {fileID: 400939913}
 --- !u!1 &2032391317
 GameObject:
   m_ObjectHideFlags: 0
