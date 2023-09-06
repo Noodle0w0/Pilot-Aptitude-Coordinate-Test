@@ -9,6 +9,8 @@ public class GridInst : MonoBehaviour
 {
     [SerializeField] GameObject gridPrefab;
     [SerializeField] float number;
+    public TextMeshProUGUI puan;
+    int puann;
     public TMP_FontAsset font;
     public TMP_InputField inputField;
     private GameObject textObject;
@@ -217,6 +219,7 @@ public class GridInst : MonoBehaviour
 
     void Update()
     {
+        puann = puann;
         if (inputField == null)
         {
             return;
@@ -268,41 +271,80 @@ public class GridInst : MonoBehaviour
 
         if (c == 0 && (o1 + 1) == d && (o2 + 1) == e)
         {
-            Debug.Log("O eþleþti 1");
+            puann++;
+            puan.text = puann.ToString();
+            inputField.text = "";
+            c = 11;
+            d = 11;
+            e = 11;
         }
         if (c == 0 && (o3 + 1) == d && (o4 + 1) == e)
         {
-            Debug.Log("O eþleþti 2");
+            puann++;
+            puan.text = puann.ToString();
+            inputField.text = "";
+            c = 11;
+            d = 11;
+            e = 11;
         }
 
 
         if ((a + 1) == c && (b + 1) == d)
         {
-            Debug.Log("Eþleþti");
+            puann++;
+            puan.text = puann.ToString();
+            inputField.text = "";
+            c = 11;
+            d = 11;
         }
         if ((a2 + 1) == c && (b2 + 1) == d)
         {
-            Debug.Log("Eþleþti2");
+            puann++;
+            puan.text = puann.ToString();
+            inputField.text = "";
+            c = 11;
+            d = 11;
         }
         if ((a3 + 1) == c && (b3 + 1) == d)
         {
-            Debug.Log("Eþleþti3");
+            puann++;
+            puan.text = puann.ToString();
+            inputField.text = "";
+            c = 11;
+            d = 11;
         }
         if ((a4 + 1) == c && (b4 + 1) == d)
         {
-            Debug.Log("Eþleþti4");
+            puann++;
+            puan.text = puann.ToString();
+            inputField.text = "";
+            c = 11;
+            d = 11;
         }
         if ((a5 + 1) == c && (b5 + 1) == d)
         {
-            Debug.Log("Eþleþti5");
+            puann++;
+            puan.text = puann.ToString();
+            inputField.text = "";
+            c = 11;
+            d = 11;
         }
         if ((a6 + 1) == c && (b6 + 1) == d)
         {
-            Debug.Log("Eþleþti6");
+            puann++;
+            puan.text = puann.ToString();
+            inputField.text = "";
+            c = 11;
+            d = 11;
         }
         if ((a7 + 1) == c && (b7 + 1) == d)
         {
-            Debug.Log("Eþleþti7");
+            puann++;
+            puan.text = puann.ToString();
+            inputField.text = "";
+            c = 11;
+            d = 11;
+
         }
     }
 
@@ -317,6 +359,24 @@ public class GridInst : MonoBehaviour
         Destroy(textObject7);
         Destroy(textObject8);
         Destroy(textObject9);
+        a = 11;
+        b = 11;
+        a2 = 11;
+        b2 = 11;
+        a3 = 11;
+        b3 = 11;
+        a4 = 11;
+        b4 = 11;
+        a5 = 11;
+        b5 = 11;
+        a6 = 11;
+        b6 = 11;
+        a7 = 11;
+        b7 = 11;
+        o1 = 11;
+        o2 = 11;
+        o3 = 11;
+        o4 = 11;
         Start();
     }
 
