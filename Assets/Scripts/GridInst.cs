@@ -217,7 +217,7 @@ public class GridInst : MonoBehaviour
         }
     }
 
-    void Update()
+    public void EnterButton()
     {
         puann = puann;
         if (inputField == null)
@@ -277,6 +277,7 @@ public class GridInst : MonoBehaviour
             c = 11;
             d = 11;
             e = 11;
+            Destroy(textObject);
         }
         if (c == 0 && (o3 + 1) == d && (o4 + 1) == e)
         {
@@ -286,6 +287,7 @@ public class GridInst : MonoBehaviour
             c = 11;
             d = 11;
             e = 11;
+            Destroy(textObject2);
         }
 
 
@@ -296,6 +298,7 @@ public class GridInst : MonoBehaviour
             inputField.text = "";
             c = 11;
             d = 11;
+            Destroy(textObject3);
         }
         if ((a2 + 1) == c && (b2 + 1) == d)
         {
@@ -304,6 +307,7 @@ public class GridInst : MonoBehaviour
             inputField.text = "";
             c = 11;
             d = 11;
+            Destroy(textObject4);
         }
         if ((a3 + 1) == c && (b3 + 1) == d)
         {
@@ -312,6 +316,7 @@ public class GridInst : MonoBehaviour
             inputField.text = "";
             c = 11;
             d = 11;
+            Destroy(textObject5);
         }
         if ((a4 + 1) == c && (b4 + 1) == d)
         {
@@ -320,6 +325,7 @@ public class GridInst : MonoBehaviour
             inputField.text = "";
             c = 11;
             d = 11;
+            Destroy(textObject6);
         }
         if ((a5 + 1) == c && (b5 + 1) == d)
         {
@@ -328,6 +334,7 @@ public class GridInst : MonoBehaviour
             inputField.text = "";
             c = 11;
             d = 11;
+            Destroy(textObject7);
         }
         if ((a6 + 1) == c && (b6 + 1) == d)
         {
@@ -336,6 +343,7 @@ public class GridInst : MonoBehaviour
             inputField.text = "";
             c = 11;
             d = 11;
+            Destroy(textObject8);
         }
         if ((a7 + 1) == c && (b7 + 1) == d)
         {
@@ -344,7 +352,7 @@ public class GridInst : MonoBehaviour
             inputField.text = "";
             c = 11;
             d = 11;
-
+            Destroy(textObject9);
         }
     }
 

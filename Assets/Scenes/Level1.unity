@@ -21136,8 +21136,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1885795983}
-        m_TargetAssemblyTypeName: KeypadController, Assembly-CSharp
+      - m_Target: {fileID: 2030351379}
+        m_TargetAssemblyTypeName: GridInst, Assembly-CSharp
         m_MethodName: EnterButton
         m_Mode: 1
         m_Arguments:
@@ -26755,6 +26755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridPrefab: {fileID: 2902852749430722929, guid: 437bcd5472ccf3841bb41da8ae2bd847, type: 3}
   number: 9
+  puan: {fileID: 590529322}
   font: {fileID: 0}
   inputField: {fileID: 400939913}
 --- !u!1 &2032391317
