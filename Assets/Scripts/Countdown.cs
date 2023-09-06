@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
 
@@ -50,6 +51,8 @@ public class Countdown : MonoBehaviour
             {
                 Debug.Log("100'den geriye sayma bitti");
                 isCountingDown100 = false;
+
+                SceneManager.LoadScene("MainScene");
             }
         }
     }
