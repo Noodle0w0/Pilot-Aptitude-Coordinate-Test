@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class GridInst : MonoBehaviour
@@ -10,6 +11,16 @@ public class GridInst : MonoBehaviour
     [SerializeField] float number;
     public TMP_FontAsset font;
     public TMP_InputField inputField;
+    private GameObject textObject;
+    private GameObject textObject2;
+    private GameObject textObject3;
+    private GameObject textObject4;
+    private GameObject textObject5;
+    private GameObject textObject6;
+    private GameObject textObject7;
+    private GameObject textObject8;
+    private GameObject textObject9;
+
 
     int a;
     int b;
@@ -85,7 +96,7 @@ public class GridInst : MonoBehaviour
                 grid.transform.position = new Vector3((i), (y), 0f);
                 if (i == o1 && y == o2)
                 {
-                    GameObject textObject = new GameObject("O");
+                    textObject = new GameObject("O");
                     textObject.transform.position = new Vector3(((float)i), ((float)y), 0f);
                     // TextMeshPro bileþenini ekleyin ve metni ayarlayýn
                     TextMeshPro textMeshPro = textObject.AddComponent<TextMeshPro>();
@@ -98,10 +109,10 @@ public class GridInst : MonoBehaviour
                 }
                 if (i == o3 && y == o4)
                 {
-                    GameObject textObject = new GameObject("O");
-                    textObject.transform.position = new Vector3(((float)i), ((float)y), 0f);
+                    textObject2 = new GameObject("O1");
+                    textObject2.transform.position = new Vector3(((float)i), ((float)y), 0f);
                     // TextMeshPro bileþenini ekleyin ve metni ayarlayýn
-                    TextMeshPro textMeshPro = textObject.AddComponent<TextMeshPro>();
+                    TextMeshPro textMeshPro = textObject2.AddComponent<TextMeshPro>();
                     textMeshPro.text = "o"; // Metin içeriðini belirlediðiniz diziye göre alýn
                     textMeshPro.color = Color.white;
                     textMeshPro.fontSize = 9; // Metin boyutunu ayarlayabilirsiniz
@@ -111,10 +122,10 @@ public class GridInst : MonoBehaviour
                 }
                 if (i == a && y == b)
                 {
-                    GameObject textObject = new GameObject("Yýldýz");
-                    textObject.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
+                    textObject3 = new GameObject("Yýldýz1");
+                    textObject3.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
                     // TextMeshPro bileþenini ekleyin ve metni ayarlayýn
-                    TextMeshPro textMeshPro = textObject.AddComponent<TextMeshPro>();
+                    TextMeshPro textMeshPro = textObject3.AddComponent<TextMeshPro>();
                     textMeshPro.text = "*"; // Metin içeriðini belirlediðiniz diziye göre alýn
                     textMeshPro.color = Color.white;
                     textMeshPro.fontSize = 9; // Metin boyutunu ayarlayabilirsiniz
@@ -124,10 +135,10 @@ public class GridInst : MonoBehaviour
                 }
                 if (i == a2 && y == b2)
                 {
-                    GameObject textObject = new GameObject("Yýldýz");
-                    textObject.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
+                    textObject4 = new GameObject("Yýldýz2");
+                    textObject4.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
                     // TextMeshPro bileþenini ekleyin ve metni ayarlayýn
-                    TextMeshPro textMeshPro = textObject.AddComponent<TextMeshPro>();
+                    TextMeshPro textMeshPro = textObject4.AddComponent<TextMeshPro>();
                     textMeshPro.text = "*"; // Metin içeriðini belirlediðiniz diziye göre alýn
                     textMeshPro.color = Color.white;
                     textMeshPro.fontSize = 9; // Metin boyutunu ayarlayabilirsiniz
@@ -137,10 +148,10 @@ public class GridInst : MonoBehaviour
                 }
                 if (i == a3 && y == b3)
                 {
-                    GameObject textObject = new GameObject("Yýldýz");
-                    textObject.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
+                    textObject5 = new GameObject("Yýldýz3");
+                    textObject5.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
                     // TextMeshPro bileþenini ekleyin ve metni ayarlayýn
-                    TextMeshPro textMeshPro = textObject.AddComponent<TextMeshPro>();
+                    TextMeshPro textMeshPro = textObject5.AddComponent<TextMeshPro>();
                     textMeshPro.text = "*"; // Metin içeriðini belirlediðiniz diziye göre alýn
                     textMeshPro.color = Color.white;
                     textMeshPro.fontSize = 9; // Metin boyutunu ayarlayabilirsiniz
@@ -150,10 +161,10 @@ public class GridInst : MonoBehaviour
                 }
                 if (i == a4 && y == b4)
                 {
-                    GameObject textObject = new GameObject("Yýldýz");
-                    textObject.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
+                    textObject6 = new GameObject("Yýldýz4");
+                    textObject6.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
                     // TextMeshPro bileþenini ekleyin ve metni ayarlayýn
-                    TextMeshPro textMeshPro = textObject.AddComponent<TextMeshPro>();
+                    TextMeshPro textMeshPro = textObject6.AddComponent<TextMeshPro>();
                     textMeshPro.text = "*"; // Metin içeriðini belirlediðiniz diziye göre alýn
                     textMeshPro.color = Color.white;
                     textMeshPro.fontSize = 9; // Metin boyutunu ayarlayabilirsiniz
@@ -163,10 +174,10 @@ public class GridInst : MonoBehaviour
                 }
                 if (i == a5 && y == b5)
                 {
-                    GameObject textObject = new GameObject("Yýldýz");
-                    textObject.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
+                    textObject7 = new GameObject("Yýldýz5");
+                    textObject7.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
                     // TextMeshPro bileþenini ekleyin ve metni ayarlayýn
-                    TextMeshPro textMeshPro = textObject.AddComponent<TextMeshPro>();
+                    TextMeshPro textMeshPro = textObject7.AddComponent<TextMeshPro>();
                     textMeshPro.text = "*"; // Metin içeriðini belirlediðiniz diziye göre alýn
                     textMeshPro.color = Color.white;
                     textMeshPro.fontSize = 9; // Metin boyutunu ayarlayabilirsiniz
@@ -176,10 +187,10 @@ public class GridInst : MonoBehaviour
                 }
                 if (i == a6 && y == b6)
                 {
-                    GameObject textObject = new GameObject("Yýldýz");
-                    textObject.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
+                    textObject8 = new GameObject("Yýldýz6");
+                    textObject8.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
                     // TextMeshPro bileþenini ekleyin ve metni ayarlayýn
-                    TextMeshPro textMeshPro = textObject.AddComponent<TextMeshPro>();
+                    TextMeshPro textMeshPro = textObject8.AddComponent<TextMeshPro>();
                     textMeshPro.text = "*"; // Metin içeriðini belirlediðiniz diziye göre alýn
                     textMeshPro.color = Color.white;
                     textMeshPro.fontSize = 9; // Metin boyutunu ayarlayabilirsiniz
@@ -189,10 +200,10 @@ public class GridInst : MonoBehaviour
                 }
                 if (i == a7 && y == b7)
                 {
-                    GameObject textObject = new GameObject("Yýldýz");
-                    textObject.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
+                    textObject9 = new GameObject("Yýldýz7");
+                    textObject9.transform.position = new Vector3(((float)i), ((float)y - 0.15f), 0f);
                     // TextMeshPro bileþenini ekleyin ve metni ayarlayýn
-                    TextMeshPro textMeshPro = textObject.AddComponent<TextMeshPro>();
+                    TextMeshPro textMeshPro = textObject9.AddComponent<TextMeshPro>();
                     textMeshPro.text = "*"; // Metin içeriðini belirlediðiniz diziye göre alýn
                     textMeshPro.color = Color.white;
                     textMeshPro.fontSize = 9; // Metin boyutunu ayarlayabilirsiniz
@@ -294,4 +305,19 @@ public class GridInst : MonoBehaviour
             Debug.Log("Eþleþti7");
         }
     }
+
+    void Yenileme()
+    {
+        Destroy(textObject);
+        Destroy(textObject2);
+        Destroy(textObject3);
+        Destroy(textObject4);
+        Destroy(textObject5);
+        Destroy(textObject6);
+        Destroy(textObject7);
+        Destroy(textObject8);
+        Destroy(textObject9);
+        Start();
+    }
+
 }

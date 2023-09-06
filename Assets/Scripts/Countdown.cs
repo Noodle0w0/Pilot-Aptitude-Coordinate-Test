@@ -68,6 +68,8 @@ public class Countdown : MonoBehaviour
             if (countdownValue5 == 0)
             {
                 countdownRepeatCount--;
+                GameObject hedefObj = GameObject.Find("Grid"); // Yenilemek istediðiniz objenin adýný girin
+                hedefObj.SendMessage("Yenileme", SendMessageOptions.RequireReceiver);
                 Debug.Log("5'ten geriye sayma bitti");
 
                 if (countdownRepeatCount == 0)
