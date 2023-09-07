@@ -10,7 +10,9 @@ public class GridInst : MonoBehaviour
     [SerializeField] GameObject gridPrefab;
     [SerializeField] float number;
     public TextMeshProUGUI puan;
+    public TextMeshProUGUI hatapuan;
     int puann;
+    int hatapuann;
     public TMP_FontAsset font;
     public TMP_InputField inputField;
     private GameObject textObject;
@@ -279,7 +281,7 @@ public class GridInst : MonoBehaviour
             e = 11;
             Destroy(textObject);
         }
-        if (c == 0 && (o3 + 1) == d && (o4 + 1) == e)
+        else if (c == 0 && (o3 + 1) == d && (o4 + 1) == e)
         {
             puann++;
             puan.text = puann.ToString();
@@ -289,9 +291,7 @@ public class GridInst : MonoBehaviour
             e = 11;
             Destroy(textObject2);
         }
-
-
-        if ((a + 1) == c && (b + 1) == d)
+        else if((a + 1) == c && (b + 1) == d)
         {
             puann++;
             puan.text = puann.ToString();
@@ -300,7 +300,7 @@ public class GridInst : MonoBehaviour
             d = 11;
             Destroy(textObject3);
         }
-        if ((a2 + 1) == c && (b2 + 1) == d)
+        else if ((a2 + 1) == c && (b2 + 1) == d)
         {
             puann++;
             puan.text = puann.ToString();
@@ -309,7 +309,7 @@ public class GridInst : MonoBehaviour
             d = 11;
             Destroy(textObject4);
         }
-        if ((a3 + 1) == c && (b3 + 1) == d)
+        else if ((a3 + 1) == c && (b3 + 1) == d)
         {
             puann++;
             puan.text = puann.ToString();
@@ -318,7 +318,7 @@ public class GridInst : MonoBehaviour
             d = 11;
             Destroy(textObject5);
         }
-        if ((a4 + 1) == c && (b4 + 1) == d)
+        else if ((a4 + 1) == c && (b4 + 1) == d)
         {
             puann++;
             puan.text = puann.ToString();
@@ -327,7 +327,7 @@ public class GridInst : MonoBehaviour
             d = 11;
             Destroy(textObject6);
         }
-        if ((a5 + 1) == c && (b5 + 1) == d)
+        else if ((a5 + 1) == c && (b5 + 1) == d)
         {
             puann++;
             puan.text = puann.ToString();
@@ -336,7 +336,7 @@ public class GridInst : MonoBehaviour
             d = 11;
             Destroy(textObject7);
         }
-        if ((a6 + 1) == c && (b6 + 1) == d)
+        else if ((a6 + 1) == c && (b6 + 1) == d)
         {
             puann++;
             puan.text = puann.ToString();
@@ -345,7 +345,7 @@ public class GridInst : MonoBehaviour
             d = 11;
             Destroy(textObject8);
         }
-        if ((a7 + 1) == c && (b7 + 1) == d)
+        else if ((a7 + 1) == c && (b7 + 1) == d)
         {
             puann++;
             puan.text = puann.ToString();
@@ -353,6 +353,12 @@ public class GridInst : MonoBehaviour
             c = 11;
             d = 11;
             Destroy(textObject9);
+        }
+        else
+        {
+            hatapuann++;
+            hatapuan.text = hatapuann.ToString();
+            inputField.text = "";
         }
     }
 
