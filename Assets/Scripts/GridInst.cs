@@ -48,6 +48,8 @@ public class GridInst : MonoBehaviour
     int c;
     int d;
     int e;
+
+    int osayýsý = 11;
     void Start()
     {
         int min = 0;
@@ -73,6 +75,7 @@ public class GridInst : MonoBehaviour
         {
             o1 = Random.Range(min, max);
             o2 = Random.Range(min, max);
+            osayýsý = 1;
         }
         if (orandom == 5)
         {
@@ -80,6 +83,7 @@ public class GridInst : MonoBehaviour
             o2 = Random.Range(min, max);
             o3 = Random.Range(min, max);
             o4 = Random.Range(min, max);
+            osayýsý = 2;
         }
         Debug.Log(o1 + " " + o2);
         Debug.Log(o3 + " " + o4);
@@ -221,7 +225,6 @@ public class GridInst : MonoBehaviour
 
     public void EnterButton()
     {
-        puann = puann;
         if (inputField == null)
         {
             return;
@@ -279,7 +282,14 @@ public class GridInst : MonoBehaviour
             c = 11;
             d = 11;
             e = 11;
+            o1 = 11;
+            o2 = 11;
             Destroy(textObject);
+            osayýsý--;
+            if (osayýsý == 0)
+            {
+                osayýsý = 11;
+            }
         }
         else if (c == 0 && (o3 + 1) == d && (o4 + 1) == e)
         {
@@ -289,69 +299,90 @@ public class GridInst : MonoBehaviour
             c = 11;
             d = 11;
             e = 11;
+            o3 = 11;
+            o4 = 11;
             Destroy(textObject2);
+            osayýsý--;
+            if (osayýsý == 0)
+            {
+                osayýsý = 11;
+            }
         }
-        else if((a + 1) == c && (b + 1) == d)
+        else if ((a + 1) == c && (b + 1) == d && osayýsý == 11)
         {
             puann++;
             puan.text = puann.ToString();
             inputField.text = "";
             c = 11;
             d = 11;
+            a = 11;
+            b = 11;
             Destroy(textObject3);
         }
-        else if ((a2 + 1) == c && (b2 + 1) == d)
+        else if ((a2 + 1) == c && (b2 + 1) == d && osayýsý == 11)
         {
             puann++;
             puan.text = puann.ToString();
             inputField.text = "";
             c = 11;
             d = 11;
+            a2 = 11;
+            b2 = 11;
             Destroy(textObject4);
         }
-        else if ((a3 + 1) == c && (b3 + 1) == d)
+        else if ((a3 + 1) == c && (b3 + 1) == d && osayýsý == 11)
         {
             puann++;
             puan.text = puann.ToString();
             inputField.text = "";
             c = 11;
             d = 11;
+            a3 = 11;
+            b3 = 11;
             Destroy(textObject5);
         }
-        else if ((a4 + 1) == c && (b4 + 1) == d)
+        else if ((a4 + 1) == c && (b4 + 1) == d && osayýsý == 11)
         {
             puann++;
             puan.text = puann.ToString();
             inputField.text = "";
             c = 11;
             d = 11;
+            a4 = 11;
+            b4 = 11;
             Destroy(textObject6);
         }
-        else if ((a5 + 1) == c && (b5 + 1) == d)
+        else if ((a5 + 1) == c && (b5 + 1) == d && osayýsý == 11)
         {
             puann++;
             puan.text = puann.ToString();
             inputField.text = "";
             c = 11;
             d = 11;
+            a5 = 11;
+            b5 = 11;
             Destroy(textObject7);
         }
-        else if ((a6 + 1) == c && (b6 + 1) == d)
+        else if ((a6 + 1) == c && (b6 + 1) == d && osayýsý == 11)
         {
             puann++;
             puan.text = puann.ToString();
             inputField.text = "";
             c = 11;
             d = 11;
+            a6 = 11;
+            b6 = 11;
             Destroy(textObject8);
         }
-        else if ((a7 + 1) == c && (b7 + 1) == d)
+        else if ((a7 + 1) == c && (b7 + 1) == d && osayýsý == 11)
         {
             puann++;
             puan.text = puann.ToString();
             inputField.text = "";
             c = 11;
             d = 11;
+            a7 = 11;
+            b7 = 11;
             Destroy(textObject9);
         }
         else
@@ -391,6 +422,7 @@ public class GridInst : MonoBehaviour
         o2 = 11;
         o3 = 11;
         o4 = 11;
+        osayýsý = 11;
         Start();
     }
 
