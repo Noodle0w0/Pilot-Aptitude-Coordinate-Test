@@ -1,0 +1,5 @@
+C:/Users/mehha/Desktop/Pilot-Aptitude-Coordinate-Test/Pilot-Aptitude-Coordinate-Test/.utmp/RelWithDebInfo/4b4g47c5/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/mehha/Desktop/Pilot-Aptitude-Coordinate-Test/Pilot-Aptitude-Coordinate-Test/.utmp/RelWithDebInfo/4b4g47c5/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+C:/Users/mehha/Desktop/Pilot-Aptitude-Coordinate-Test/Pilot-Aptitude-Coordinate-Test/.utmp/RelWithDebInfo/4b4g47c5/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/Users/mehha/Desktop/Pilot-Aptitude-Coordinate-Test/Pilot-Aptitude-Coordinate-Test/.utmp/RelWithDebInfo/4b4g47c5/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+C:/Users/mehha/Desktop/Pilot-Aptitude-Coordinate-Test/Pilot-Aptitude-Coordinate-Test/.utmp/RelWithDebInfo/4b4g47c5/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir

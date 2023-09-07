@@ -8,6 +8,11 @@ public class Countdown : MonoBehaviour
 {
     public TextMeshProUGUI countdownText100;
     public TextMeshProUGUI countdownText5;
+    public TextMeshProUGUI puan;
+    public TextMeshProUGUI hatapuan;
+
+    string puann;
+    string hatapuann;
 
     private int countdownValue100 = 100;
     private int countdownValue5 = 5;
@@ -51,7 +56,10 @@ public class Countdown : MonoBehaviour
             {
                 Debug.Log("100'den geriye sayma bitti");
                 isCountingDown100 = false;
-
+                puann = puan.text;
+                hatapuann = hatapuan.text;
+                PlayerPrefs.SetString("puan", puann);
+                PlayerPrefs.SetString("hatapuan", hatapuann);
                 SceneManager.LoadScene("MainScene");
             }
         }
